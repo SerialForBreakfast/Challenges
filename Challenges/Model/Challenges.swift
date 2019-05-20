@@ -80,20 +80,34 @@ public class Challenges: NSObject {
         }
         return condensedWhitespace
     }
-    
+    // String is rotate
     func challenge8(input: String, rotated: String) -> Bool {
-        guard input.count == rotated.count
-            else { return false }
-        let combined = input + input
-        //let inputArray = Array(input)
-        return combined.contains(rotated)
+        let doubledString = input + input
+        return doubledString.contains(rotated)
     }
-    
+    // Is it a pangram.  Does it have all the letters of the alphabet?
     func challenge9 (input: String) -> Bool {
         let set = Set(input.lowercased())
         let letters = set.filter { $0 >= "a" && $0 <= "z" }
         return letters.count == 26
     }
+    //  Vowels and consonants
+    func challenge10(input: String) -> ( Int, Int ) {
+        var vowelCount = 0, consonantCount = 0
+        let letters = input.lowercased().filter{ $0 >= "a" && $0 <= "z" }
+        for letter in letters {
+            if (String(letter) == "a" || String(letter) == "e" || String(letter) == "i" || String(letter) == "o" || String(letter) == "u"  ) {
+                vowelCount += 1
+            } else {
+                consonantCount += 1
+            }
+        }
+        return ( vowelCount, consonantCount )
+    }
+    
+    
+    
+    
 }
 
 

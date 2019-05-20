@@ -31,6 +31,9 @@ class ListVC: UITableViewController {
         print(challenges.challenge5(input: "potato", count: "o"))
         print(challenges.challenge6(string: "Alabama"))
         print(challenges.challenge7(string: "3   2  1 1 2  3  "))
+        print(challenges.challenge8(input: "abcdef", rotated: "cde"))
+        print(challenges.challenge9(input: "The quick brown fox jumped over the lazy dog."))
+        print(challenges.challenge10(input: "AaaBbbCcc"))
         
         //print("Advent Of Code Results")
         //print(adventOfCode.Day1a())
