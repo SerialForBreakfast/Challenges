@@ -35,25 +35,27 @@ public class Challenges: NSObject {
     
     //  Does one string contain another?
     func challenge4(string1: String, string2: String) -> Bool {
-//        let string1char = Array(string1)
-//        print(string1char)
-//        let string2char = Array(string2)
-//
         return string1.lowercased().range(of: string2.lowercased()) != nil
-//        for i in string1char {
-//            if string1char[i] = string2char[0] {
-//                for j in string2char {
-//                    if string1char[i]  == string2char[j] {
-//                        if j == string2char.count {
-//                            return true
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//        return false
     }
-    
+    //  How many times does a Character appear in a String
+    func challenge5(input: String, count: Character) -> Int {
+        var letterCount = 0
+        for letter in input {
+            if letter == count {
+                letterCount += 1
+            }
+        }
+        return letterCount
+    }
+    // alternate
+    func challenge5b(input: String, count: Character) -> Int {
+        return input.reduce(0) { $1 == count ? $0 + 1  : $0}
+    }
+    // Removal alternative
+    func challenge5c(input: String, count: Character) -> Int {
+        let characterRemoved = input.replacingOccurrences(of: String(count), with: "")
+        return input.count - characterRemoved.count
+    }
     
     func challenge8(input: String, rotated: String) -> Bool {
         guard input.count == rotated.count
@@ -72,8 +74,8 @@ public class Challenges: NSObject {
 
 
 
-extension String {
-    subscript(i: Int) -> String {
-        return String(self[index(startIndex, offsetBy: i)])
-    }
-}
+//extension String {
+//    subscript(i: Int) -> String {
+//        return String(self[index(startIndex, offsetBy: i)])
+//    }
+//}
