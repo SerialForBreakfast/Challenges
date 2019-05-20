@@ -22,6 +22,10 @@ class ChallengesTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let challenges = Challenges()
+        XCTAssert((challenges.challenge1(input: "no Dupes")))
+        XCTAssert(challenges.challenge2(input: "aabbaa"))
+        XCTAssert(!challenges.challenge2(input: "aabcaa"))
     }
 
     func testPerformanceExample() {

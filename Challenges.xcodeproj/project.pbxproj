@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		449E625C2291F4AE00D29FE4 /* AdventOfCode2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */; };
+		449E625D2291F4BB00D29FE4 /* adventOfCode2018Day1Input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */; };
+		44ABF5E92291EFFF00C6CCEB /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721C22913A8000FF3EAF /* ListVC.swift */; };
 		44E1721B22913A8000FF3EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721A22913A8000FF3EAF /* AppDelegate.swift */; };
-		44E1721D22913A8000FF3EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721C22913A8000FF3EAF /* ViewController.swift */; };
+		44E1721D22913A8000FF3EAF /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721C22913A8000FF3EAF /* ListVC.swift */; };
 		44E1722022913A8000FF3EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E1721E22913A8000FF3EAF /* Main.storyboard */; };
 		44E1722222913A8300FF3EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E1722122913A8300FF3EAF /* Assets.xcassets */; };
 		44E1722522913A8300FF3EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E1722322913A8300FF3EAF /* LaunchScreen.storyboard */; };
 		44E1723022913A8300FF3EAF /* ChallengesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1722F22913A8300FF3EAF /* ChallengesTests.swift */; };
 		44E1723B22913A8300FF3EAF /* ChallengesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1723A22913A8300FF3EAF /* ChallengesUITests.swift */; };
+		44E172492291D2DF00FF3EAF /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E172482291D2DE00FF3EAF /* Challenges.swift */; };
+		44E1724B2291D53900FF3EAF /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E172482291D2DE00FF3EAF /* Challenges.swift */; };
+		44E1724D2291E09800FF3EAF /* adventOfCode2018Day1Input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */; };
+		44E172502291E13100FF3EAF /* AdventOfCode2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		44E1721722913A8000FF3EAF /* Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E1721A22913A8000FF3EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44E1721C22913A8000FF3EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44E1721C22913A8000FF3EAF /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		44E1721F22913A8000FF3EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44E1722122913A8300FF3EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44E1722422913A8300FF3EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		44E1723622913A8300FF3EAF /* ChallengesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E1723A22913A8300FF3EAF /* ChallengesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesUITests.swift; sourceTree = "<group>"; };
 		44E1723C22913A8300FF3EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E172482291D2DE00FF3EAF /* Challenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
+		44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adventOfCode2018Day1Input.txt; sourceTree = "<group>"; };
+		44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2018.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44ABF5EA2291F04600C6CCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44E1721C22913A8000FF3EAF /* ListVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		44E1720E22913A7F00FF3EAF = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				44E1721A22913A8000FF3EAF /* AppDelegate.swift */,
-				44E1721C22913A8000FF3EAF /* ViewController.swift */,
+				44ABF5EA2291F04600C6CCEB /* Controller */,
+				44E1724E2291E0A200FF3EAF /* Data */,
+				44E1724A2291D2E600FF3EAF /* Model */,
 				44E1721E22913A8000FF3EAF /* Main.storyboard */,
 				44E1722122913A8300FF3EAF /* Assets.xcassets */,
 				44E1722322913A8300FF3EAF /* LaunchScreen.storyboard */,
@@ -123,6 +143,23 @@
 				44E1723C22913A8300FF3EAF /* Info.plist */,
 			);
 			path = ChallengesUITests;
+			sourceTree = "<group>";
+		};
+		44E1724A2291D2E600FF3EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44E172482291D2DE00FF3EAF /* Challenges.swift */,
+				44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44E1724E2291E0A200FF3EAF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +269,7 @@
 				44E1722522913A8300FF3EAF /* LaunchScreen.storyboard in Resources */,
 				44E1722222913A8300FF3EAF /* Assets.xcassets in Resources */,
 				44E1722022913A8000FF3EAF /* Main.storyboard in Resources */,
+				44E1724D2291E09800FF3EAF /* adventOfCode2018Day1Input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449E625D2291F4BB00D29FE4 /* adventOfCode2018Day1Input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E1721D22913A8000FF3EAF /* ViewController.swift in Sources */,
+				44E1721D22913A8000FF3EAF /* ListVC.swift in Sources */,
 				44E1721B22913A8000FF3EAF /* AppDelegate.swift in Sources */,
+				44E172502291E13100FF3EAF /* AdventOfCode2018.swift in Sources */,
+				44E172492291D2DF00FF3EAF /* Challenges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44ABF5E92291EFFF00C6CCEB /* ListVC.swift in Sources */,
 				44E1723022913A8300FF3EAF /* ChallengesTests.swift in Sources */,
+				449E625C2291F4AE00D29FE4 /* AdventOfCode2018.swift in Sources */,
+				44E1724B2291D53900FF3EAF /* Challenges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
