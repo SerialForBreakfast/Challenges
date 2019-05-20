@@ -56,6 +56,30 @@ public class Challenges: NSObject {
         let characterRemoved = input.replacingOccurrences(of: String(count), with: "")
         return input.count - characterRemoved.count
     }
+    // Remove duplicate letters from a string
+    func challenge6(string: String) -> String {
+        var noDuplicateLetters: String = ""
+        for letter in string {
+            if !noDuplicateLetters.lowercased().contains(letter.lowercased()) {
+                noDuplicateLetters.append(letter)
+            }
+        }
+        return noDuplicateLetters
+    }
+    // Condense Whitespace to only 1 character
+    func challenge7(string: String) -> String {
+        var condensedWhitespace: String = ""
+        for letter in string {
+            if letter == " " {
+                if !condensedWhitespace.hasSuffix(" ") {
+                    condensedWhitespace.append(letter)
+                }
+            } else {
+            condensedWhitespace.append(letter)
+            }
+        }
+        return condensedWhitespace
+    }
     
     func challenge8(input: String, rotated: String) -> Bool {
         guard input.count == rotated.count

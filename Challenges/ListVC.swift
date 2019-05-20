@@ -29,10 +29,12 @@ class ListVC: UITableViewController {
         print(challenges.challenge4(string1: "abcdefg", string2: "rde"))
         
         print(challenges.challenge5(input: "potato", count: "o"))
+        print(challenges.challenge6(string: "Alabama"))
+        print(challenges.challenge7(string: "3   2  1 1 2  3  "))
         
-        print("Advent Of Code Results")
-        print(adventOfCode.Day1a())
-        print(adventOfCode.Day1b())
+        //print("Advent Of Code Results")
+        //print(adventOfCode.Day1a())
+        //print(adventOfCode.Day1b())
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,7 +51,7 @@ class ListVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let labelArray = [String(challenges.challenge1(input: "no Dupes")), "", "", "", String(adventOfCode.Day1a()) ]
+        let labelArray = [String(challenges.challenge1(input: "no Dupes")), "", "", "", ""]
         cell.textLabel?.text = labelArray[indexPath.row]
         return cell
     }
