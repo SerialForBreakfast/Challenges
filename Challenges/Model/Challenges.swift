@@ -75,7 +75,7 @@ public class Challenges: NSObject {
                     condensedWhitespace.append(letter)
                 }
             } else {
-            condensedWhitespace.append(letter)
+                condensedWhitespace.append(letter)
             }
         }
         return condensedWhitespace
@@ -91,7 +91,7 @@ public class Challenges: NSObject {
         let letters = set.filter { $0 >= "a" && $0 <= "z" }
         return letters.count == 26
     }
-    //  Vowels and consonants
+    // Count all Vowels and consonants
     func challenge10(input: String) -> ( Int, Int ) {
         var vowelCount = 0, consonantCount = 0
         let letters = input.lowercased().filter{ $0 >= "a" && $0 <= "z" }
@@ -105,6 +105,26 @@ public class Challenges: NSObject {
         return ( vowelCount, consonantCount )
     }
     
+    //  compares to string to be identical in length but no more than 3 different letters
+    func challenge11(string1: String, string2: String) -> Bool {
+        if (string1.count == string2.count) {
+            var differentLetters = 0
+            if differentLetters <= 3 {
+                for i in 0...string1.count {
+                    let index1 = string1.index(string1.startIndex, offsetBy: i)
+                    let index2 = string2.index(string2.startIndex, offsetBy: i)
+                    if index1 != index2 {
+                        differentLetters += 1
+                    }
+                }
+            } else {
+                return false
+            }
+            return true
+        } else {
+            return false
+        }
+    }
     
     
     
