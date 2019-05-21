@@ -11,6 +11,7 @@ import Foundation
 public class Challenges: NSObject {
     //  Are the Letters unique?
     public func challenge1(input: String) -> Bool {
+        //Sets contain no duplicates, so comparing length between the Set count and the string count
         return Set(input).count == input.count
     }
     
@@ -126,6 +127,47 @@ public class Challenges: NSObject {
         }
     }
     
+    // Find the largest string prefix in a space separated wordlist
+    func challenge12(string: String) -> String {
+        var largestPrefix: String = ""
+        var currentPrefix: String = ""
+        
+        guard let words: [String] = string.components(separatedBy: " ") else {return largestPrefix}
+        guard let first = words.first else {return largestPrefix}
+        for letter in first {
+            currentPrefix.append(letter)
+            for word in words {
+                if !word.hasPrefix(currentPrefix) {
+                    return largestPrefix
+                }
+            }
+            largestPrefix = currentPrefix
+        }
+        return largestPrefix
+    }
+    
+    //Run Length Encoding Count number of consecutive characters in a string
+    func challenge13(input: String) -> String {
+        var runLengthEncoding: String = ""
+        var currentLetter: Character?
+        var letterCount = 0
+        
+        for letter in input {
+            if letter == currentLetter {
+                letterCount += 1
+            } else {
+                if let current = currentLetter {
+                    runLengthEncoding.append("\(current)\(letterCount)")
+                }
+                currentLetter = letter
+                letterCount = 1
+            }
+        }
+        if let current = currentLetter {
+            runLengthEncoding.append("\(current)\(letterCount)")
+        }
+        return runLengthEncoding
+    }
     
     
 }
@@ -137,3 +179,34 @@ public class Challenges: NSObject {
 //        return String(self[index(startIndex, offsetBy: i)])
 //    }
 //}
+
+
+//learning algorithms
+//Mergesort
+//
+//func mergeSort(array: [Int]) -> [Int] {
+//    guard array.count > 1 else {
+//        return array
+//    }
+//    let leftArray  = Array(array[0..<array.count/2])
+//    let rightArray = Array(array[array.count/2..<array.count])
+//    return merge(left: mergeSort(array: leftArray), right: mergeSort(array: rightArray))
+//
+//}
+//
+//func merge(left: [Int], right: [Int]) -> [Int] {
+//    var mergedArray: [Int] = []
+//    var left = left
+//    var right = right
+//
+//    while left.count > 0 && right.count > 0 {
+//        if left.first! < right.first! {
+//            mergedArray.append(left.removeFirst())
+//        } else {
+//            mergedArray.append(right.removeFirst())
+//        }
+//    }
+//    return mergedArray + left + right
+//}
+
+
