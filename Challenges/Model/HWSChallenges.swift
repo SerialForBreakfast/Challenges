@@ -169,7 +169,6 @@ public class HWSChallenges: NSObject {
         return runLengthEncoding
     }
     
-    
 }
 
 

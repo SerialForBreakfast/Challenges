@@ -8,7 +8,8 @@
 
 import UIKit
 
-class MergeSort: NSObject {
+class Sorters: NSObject {
+    
     public func mergeSort(array: [Int]) -> [Int] {
         guard array.count > 1 else {
             return array

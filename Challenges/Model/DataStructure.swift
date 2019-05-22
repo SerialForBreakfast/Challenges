@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LinkedList: NSObject {
+class DataStructure: NSObject {
 
 }
 
