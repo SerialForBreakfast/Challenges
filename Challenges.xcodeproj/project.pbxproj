@@ -11,6 +11,7 @@
 		449E625C2291F4AE00D29FE4 /* AdventOfCode2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */; };
 		449E625D2291F4BB00D29FE4 /* adventOfCode2018Day1Input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */; };
 		44ABF5E92291EFFF00C6CCEB /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721C22913A8000FF3EAF /* ListVC.swift */; };
+		44C15FCF2296043B000DC026 /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C15FCE2296043B000DC026 /* Factorial.swift */; };
 		44E1721B22913A8000FF3EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721A22913A8000FF3EAF /* AppDelegate.swift */; };
 		44E1721D22913A8000FF3EAF /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721C22913A8000FF3EAF /* ListVC.swift */; };
 		44E1722022913A8000FF3EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E1721E22913A8000FF3EAF /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		440A67F92295F531006353EF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		44C15FCE2296043B000DC026 /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		44E1721722913A8000FF3EAF /* Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E1721A22913A8000FF3EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44E1721C22913A8000FF3EAF /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */,
 				44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */,
 				44E9BA672295C4730084F8B9 /* FilterMapReduce.swift */,
+				44C15FCE2296043B000DC026 /* Factorial.swift */,
 				44E9BA692295CBAD0084F8B9 /* FizzBuzz.swift */,
 			);
 			path = Model;
@@ -319,6 +322,7 @@
 				440A67FA2295F531006353EF /* Search.swift in Sources */,
 				44E1721D22913A8000FF3EAF /* ListVC.swift in Sources */,
 				44E1721B22913A8000FF3EAF /* AppDelegate.swift in Sources */,
+				44C15FCF2296043B000DC026 /* Factorial.swift in Sources */,
 				44E9BA702295E3610084F8B9 /* DataStructure.swift in Sources */,
 				44E9BA6C2295CF330084F8B9 /* Sorters.swift in Sources */,
 				44E9BA6A2295CBAD0084F8B9 /* FizzBuzz.swift in Sources */,
