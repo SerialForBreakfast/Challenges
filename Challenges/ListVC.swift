@@ -11,7 +11,7 @@ import UIKit
 class ListVC: UITableViewController {
     @IBOutlet var challengesTableView: UITableView!
     
-    let challenges = Challenges()
+    let challenges = HWSChallenges()
     let adventOfCode = AdventOfCode2018()
     
     override func viewDidLoad() {

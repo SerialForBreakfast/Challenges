@@ -25,7 +25,7 @@ let myDevices = [myiMacPro, myiPhone6Plus, myiPhone7, myiPad, myAppleWatch, myAp
 
 //.filter does appent to the array of iPhones
 let iPhones = myDevices.filter({ $0.type == "iPhone"})
-print(iPhones)
+//print(iPhones)
 //Classic Iterative alternative
 //var myPhones: [Device] = []
 //
@@ -37,8 +37,8 @@ print(iPhones)
 
 //Use of map.  Alternatively .flatmap returns these values without nils
 let canadianPrices: [Float] = myDevices.map({ $0.price * 1.2})
-print(canadianPrices)
+//print(canadianPrices)
 
 //Reduce  initial value 0
 let totalCanadianPrices = canadianPrices.reduce(0, +)
-print(totalCanadianPrices)
+//print(totalCanadianPrices)
