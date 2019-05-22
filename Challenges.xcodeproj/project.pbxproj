@@ -25,6 +25,7 @@
 		44E9BA682295C4730084F8B9 /* FilterMapReduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA672295C4730084F8B9 /* FilterMapReduce.swift */; };
 		44E9BA6A2295CBAD0084F8B9 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA692295CBAD0084F8B9 /* FizzBuzz.swift */; };
 		44E9BA6C2295CF330084F8B9 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA6B2295CF330084F8B9 /* MergeSort.swift */; };
+		44E9BA6E2295D2ED0084F8B9 /* AbsolutePermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA6D2295D2ED0084F8B9 /* AbsolutePermutation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		44E9BA672295C4730084F8B9 /* FilterMapReduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterMapReduce.swift; sourceTree = "<group>"; };
 		44E9BA692295CBAD0084F8B9 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		44E9BA6B2295CF330084F8B9 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		44E9BA6D2295D2ED0084F8B9 /* AbsolutePermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePermutation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				44E9BA6B2295CF330084F8B9 /* MergeSort.swift */,
+				44E9BA6D2295D2ED0084F8B9 /* AbsolutePermutation.swift */,
 				44E172482291D2DE00FF3EAF /* HWSChallenges.swift */,
 				44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */,
 				44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */,
@@ -312,6 +315,7 @@
 				44E9BA6C2295CF330084F8B9 /* MergeSort.swift in Sources */,
 				44E9BA6A2295CBAD0084F8B9 /* FizzBuzz.swift in Sources */,
 				44E9BA662295BA040084F8B9 /* ClassVsStruct.swift in Sources */,
+				44E9BA6E2295D2ED0084F8B9 /* AbsolutePermutation.swift in Sources */,
 				44E172502291E13100FF3EAF /* AdventOfCode2018.swift in Sources */,
 				44E9BA682295C4730084F8B9 /* FilterMapReduce.swift in Sources */,
 				44E172492291D2DF00FF3EAF /* HWSChallenges.swift in Sources */,
