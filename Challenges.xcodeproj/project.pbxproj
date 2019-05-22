@@ -21,6 +21,7 @@
 		44E1724B2291D53900FF3EAF /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E172482291D2DE00FF3EAF /* Challenges.swift */; };
 		44E1724D2291E09800FF3EAF /* adventOfCode2018Day1Input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */; };
 		44E172502291E13100FF3EAF /* AdventOfCode2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */; };
+		44E9BA662295BA040084F8B9 /* ClassVsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		44E172482291D2DE00FF3EAF /* Challenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adventOfCode2018Day1Input.txt; sourceTree = "<group>"; };
 		44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2018.swift; sourceTree = "<group>"; };
+		44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassVsStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				44E172482291D2DE00FF3EAF /* Challenges.swift */,
 				44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */,
+				44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			files = (
 				44E1721D22913A8000FF3EAF /* ListVC.swift in Sources */,
 				44E1721B22913A8000FF3EAF /* AppDelegate.swift in Sources */,
+				44E9BA662295BA040084F8B9 /* ClassVsStruct.swift in Sources */,
 				44E172502291E13100FF3EAF /* AdventOfCode2018.swift in Sources */,
 				44E172492291D2DF00FF3EAF /* Challenges.swift in Sources */,
 			);

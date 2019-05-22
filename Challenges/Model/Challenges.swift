@@ -173,7 +173,7 @@ public class Challenges: NSObject {
 }
 
 
-
+// String extension to allow index access via bracket notation to accommodate MultiCharacter Grapheme Clusters in Unicode
 //extension String {
 //    subscript(i: Int) -> String {
 //        return String(self[index(startIndex, offsetBy: i)])

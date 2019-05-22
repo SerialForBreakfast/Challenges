@@ -58,7 +58,7 @@ class ListVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let labelArray = [String(challenges.challenge1(input: "no Dupes")), "", "", "", ""]
+        let labelArray = ["", "", "", "", ""]
         cell.textLabel?.text = labelArray[indexPath.row]
         return cell
     }
