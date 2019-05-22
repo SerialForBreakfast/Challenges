@@ -19,11 +19,21 @@ class Search: NSObject {
         return false
     }
     
-    //
+    // Split and Compare....
     func BinarySearch(searchValue: Int, array: [Int]) -> Bool {
-        for num in array {
-            if num == searchValue {
+        var leftIndex: Int = 0
+        var rightIndex: Int = array.count - 1
+        while leftIndex <= rightIndex {
+            let middleIndex = (leftIndex + rightIndex) / 2
+            let middleValue = array[middleIndex]
+            if middleValue == searchValue {
                 return true
+            }
+            if searchValue < middleValue {
+                rightIndex = middleIndex - 1
+            }
+            if searchValue > middleValue {
+                leftIndex = middleIndex + 1
             }
         }
         return false
