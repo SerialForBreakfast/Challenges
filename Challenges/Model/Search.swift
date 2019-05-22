@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Search: NSObject {
+struct Search {
     // 0(n)
     func LinearSearch(searchValue: Int, array: [Int]) -> Bool {
         for num in array {

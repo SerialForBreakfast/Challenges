@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Factorial: NSObject {
+struct Factorial {
     
     //iterated version
     func iteratedComputation(value: UInt) -> UInt {

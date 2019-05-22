@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdventOfCode2018: NSObject {
+struct AdventOfCode2018 {
     
     func Day1a() -> Int {
         var answer: Int = 0

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FizzBuzz: NSObject {
+struct FizzBuzz {
     
     public func compute(numbers: [Int]) {
         for number in numbers {

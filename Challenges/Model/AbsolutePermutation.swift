@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AbsolutePermutation: NSObject {
+struct AbsolutePermutation {
 //    var numbers: [Int]
 //    var string: String
     

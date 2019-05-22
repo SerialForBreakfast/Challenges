@@ -1,5 +1,5 @@
 //
-//  LinkedList.swift
+//  DataStructure.swift
 //  Challenges
 //
 //  Created by Joseph McCraw on 5/22/19.
@@ -8,11 +8,15 @@
 
 import UIKit
 
-class DataStructure: NSObject {
+struct DataStructure {
 
 }
 
 
-class Node: NSObject {
+struct Node {
     
 }
+
+
+
+

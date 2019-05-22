@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class HWSChallenges: NSObject {
+public struct HWSChallenges {
     //  Are the Letters unique?
     public func challenge1(input: String) -> Bool {
         //Sets contain no duplicates, so comparing length between the Set count and the string count
