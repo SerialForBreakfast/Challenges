@@ -9,13 +9,13 @@
 import Foundation
 
 public struct HWSChallenges {
-    //  Are the Letters unique?
+    //  Are the Letters unique? O(1)
     public func challenge1(input: String) -> Bool {
         //Sets contain no duplicates, so comparing length between the Set count and the string count
         return Set(input).count == input.count
     }
     
-    //  Is a string a palendrome?
+    //  Is a string a palendrome? O(1)
     func challenge2(input: String) -> Bool {
         let lowerCasedInput = input.lowercased()
         var isPalendrome: Bool = false
@@ -26,7 +26,7 @@ public struct HWSChallenges {
         return isPalendrome
     }
     
-    // Do two strings have the same characters?
+    // Do two strings have the same characters? O(1)
     func challenge3(string1: String, string2: String) -> Bool {
         if Set(string1) == Set(string2) {
             return true
@@ -34,11 +34,11 @@ public struct HWSChallenges {
         return false
     }
     
-    //  Does one string contain another?
+    //  Does one string contain another?  O(n)
     func challenge4(string1: String, string2: String) -> Bool {
         return string1.lowercased().range(of: string2.lowercased()) != nil
     }
-    //  How many times does a Character appear in a String
+    //  How many times does a Character appear in a String O(n)
     func challenge5(input: String, count: Character) -> Int {
         var letterCount = 0
         for letter in input {
@@ -48,15 +48,17 @@ public struct HWSChallenges {
         }
         return letterCount
     }
-    // alternate
+    // alternate O(n)
     func challenge5b(input: String, count: Character) -> Int {
         return input.reduce(0) { $1 == count ? $0 + 1  : $0}
     }
+    
     // Removal alternative
     func challenge5c(input: String, count: Character) -> Int {
         let characterRemoved = input.replacingOccurrences(of: String(count), with: "")
         return input.count - characterRemoved.count
     }
+    
     // Remove duplicate letters from a string
     func challenge6(string: String) -> String {
         var noDuplicateLetters: String = ""

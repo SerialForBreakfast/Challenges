@@ -36,5 +36,8 @@ struct Sorters {
     }
     
     
-    
+    public func quickSort(array: [Int]) -> [Int] {
+        let sortedArray: [Int]
+        return array
+    }
 }

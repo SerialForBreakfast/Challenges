@@ -17,6 +17,29 @@ struct Node {
     
 }
 
-
+struct Stack<T> {
+    fileprivate var array = [T]()
+    
+    public var isEmpty: Bool {
+        return array.isEmpty
+    }
+    
+    public var count: Int {
+        return array.count
+    }
+    
+    public var top: T? {
+        return array.last
+    }
+    
+    public mutating func push(_ element: T) {
+        array.append(element)
+    }
+    public mutating func pop(_ element: T) {
+        if !array.isEmpty {
+            array.popLast()
+        }
+    }
+}
 
 

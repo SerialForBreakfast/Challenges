@@ -9,24 +9,20 @@
 import UIKit
 
 struct Factorial {
-    
-    //iterated version
+    //Can't get factorial of negative numbers so UInt is appropriate - iterated version O(n)
     func iteratedComputation(value: UInt) -> UInt {
-        if value == 0 {
-            return 1
-        }
         var product: UInt = 1
-        for i in 1...value {
-            product = product + i
+        var count = value
+        while(count > 0) {
+            product *= count
+            count -= 1
         }
         return product
     }
     
     //recursive version
     func recursiveComputation(value: UInt) -> UInt {
-        if value == 0 {
-            return 1
-        }
+        if value == 1 { return 1}
         //print(value)
         return value * recursiveComputation(value: value - 1)
     }

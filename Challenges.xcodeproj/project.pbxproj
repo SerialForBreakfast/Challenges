@@ -51,6 +51,7 @@
 /* Begin PBXFileReference section */
 		440A67F92295F531006353EF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		44C15FCE2296043B000DC026 /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
+		44C15FD222963C2F000DC026 /* ChallengeLearning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChallengeLearning.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		44E1721722913A8000FF3EAF /* Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E1721A22913A8000FF3EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44E1721C22913A8000FF3EAF /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		44E1720E22913A7F00FF3EAF = {
 			isa = PBXGroup;
 			children = (
+				44C15FD222963C2F000DC026 /* ChallengeLearning.playground */,
 				44E1721922913A8000FF3EAF /* Challenges */,
 				44E1722E22913A8300FF3EAF /* ChallengesTests */,
 				44E1723922913A8300FF3EAF /* ChallengesUITests */,
