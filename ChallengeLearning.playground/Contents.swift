@@ -40,3 +40,46 @@ struct MinHeap {
     
     
 }
+
+/*
+ Challenge
+ Input: 2 Strings startingString and goalString
+ Output: returns Int of minimum number of 3 defined operations(insert, remove, replace) on startingString to make it goalString
+  */
+
+func optimalStringModification(startingString: String, goalString: String) -> Int {
+    var operationCounter: Int = 0
+    var sharedLetterCount: Int = 0
+    var prefix: String = "" //Postfix is more efficient?
+    if startingString == goalString {
+        return operationCounter
+    }
+    let lengthDifference = startingString.count - goalString.count
+    if lengthDifference == 0 {
+        operationCounter += 1
+        sharedLetterCount = Set(startingString).intersection(Set(goalString)).count
+
+        for i in 0..<goalString.count {
+            if startingString[startingString.index(startingString.startIndex, offsetBy: i)] == goalString[goalString.index(goalString.startIndex, offsetBy: i)] {
+                print (startingString[startingString.index(startingString.startIndex, offsetBy: i)])
+            } else {
+                operationCounter += 1
+            }
+        }
+        
+    }
+    return operationCounter
+ }
+
+
+print(optimalStringModification(startingString: "cat", goalString: "cot"))
+print(optimalStringModification(startingString: "cat", goalString: "cot"))
+print(optimalStringModification(startingString: "cat", goalString: "cot"))
+print(optimalStringModification(startingString: "cat", goalString: "cot"))
+
+//func insertRemove() {
+//
+//}
+//func insertRemoveOrReplace() {
+//
+//}
