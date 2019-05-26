@@ -7,8 +7,9 @@ public struct HashTable<Key: Hashable, Value> {
     private var buckets: [Bucket]
     
     private(set) public var count = 0
+    
     public init(capacity: Int) {
-        assert(capacity > 0)
+        //assert(capacity > 0)
         buckets = Array<Bucket>(repeating: [], count: capacity)
     }
     
