@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		440A67FA2295F531006353EF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A67F92295F531006353EF /* Search.swift */; };
+		4490B79F238728D500972F4A /* ClassVsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */; };
+		4490B7A0238729E400972F4A /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA692295CBAD0084F8B9 /* FizzBuzz.swift */; };
 		449E625C2291F4AE00D29FE4 /* AdventOfCode2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */; };
 		449E625D2291F4BB00D29FE4 /* adventOfCode2018Day1Input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */; };
 		44ABF5E92291EFFF00C6CCEB /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1721C22913A8000FF3EAF /* ListVC.swift */; };
@@ -29,6 +31,7 @@
 		44E9BA6C2295CF330084F8B9 /* Sorters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA6B2295CF330084F8B9 /* Sorters.swift */; };
 		44E9BA6E2295D2ED0084F8B9 /* AbsolutePermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA6D2295D2ED0084F8B9 /* AbsolutePermutation.swift */; };
 		44E9BA702295E3610084F8B9 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA6F2295E3610084F8B9 /* DataStructure.swift */; };
+		44F39FE922AF52560069AF74 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F39FE822AF52560069AF74 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,7 @@
 		44E9BA6B2295CF330084F8B9 /* Sorters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorters.swift; sourceTree = "<group>"; };
 		44E9BA6D2295D2ED0084F8B9 /* AbsolutePermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePermutation.swift; sourceTree = "<group>"; };
 		44E9BA6F2295E3610084F8B9 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
+		44F39FE822AF52560069AF74 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 				44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */,
 				44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */,
 				44E9BA672295C4730084F8B9 /* FilterMapReduce.swift */,
+				44F39FE822AF52560069AF74 /* Stack.swift */,
 				44C15FCE2296043B000DC026 /* Factorial.swift */,
 				44E9BA692295CBAD0084F8B9 /* FizzBuzz.swift */,
 			);
@@ -322,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				440A67FA2295F531006353EF /* Search.swift in Sources */,
+				44F39FE922AF52560069AF74 /* Stack.swift in Sources */,
 				44E1721D22913A8000FF3EAF /* ListVC.swift in Sources */,
 				44E1721B22913A8000FF3EAF /* AppDelegate.swift in Sources */,
 				44C15FCF2296043B000DC026 /* Factorial.swift in Sources */,
@@ -342,8 +348,10 @@
 			files = (
 				44ABF5E92291EFFF00C6CCEB /* ListVC.swift in Sources */,
 				44E1723022913A8300FF3EAF /* ChallengesTests.swift in Sources */,
+				4490B79F238728D500972F4A /* ClassVsStruct.swift in Sources */,
 				449E625C2291F4AE00D29FE4 /* AdventOfCode2018.swift in Sources */,
 				44E1724B2291D53900FF3EAF /* HWSChallenges.swift in Sources */,
+				4490B7A0238729E400972F4A /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

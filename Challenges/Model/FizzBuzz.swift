@@ -9,18 +9,20 @@
 import Foundation
 
 struct FizzBuzz {
-    
     public func compute(numbers: [Int]) {
         for number in numbers {
-            if number % 3 == 0 && number % 5 == 0 {
-                print("fizzbuzz")
-            } else if number % 3 == 0{
-                print("fizz")
-            } else if number % 5 == 0{
-                print("buzz")
-            } else {
-                print(number)
-            }
+           print(isIntAFizzOrBuzz(num: number))
         }
+    }
+    func isIntAFizzOrBuzz(num: Int) -> String {
+        if num % 3 == 0 && num % 5 == 0 {
+                       return ("fizzbuzz")
+                   } else if num % 3 == 0{
+                       return ("fizz")
+                   } else if num % 5 == 0{
+                       return ("buzz")
+                   } else {
+                       return (String(num))
+                   }
     }
 }

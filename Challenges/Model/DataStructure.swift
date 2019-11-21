@@ -13,7 +13,14 @@ struct DataStructure {
 }
 
 
-struct Node {
+public class LinkedListNode<T> {
+    var value: T
+    var next: LinkedListNode?
+    
+    
+    public init(value: T) {
+        self.value = value
+    }
     
 }
 
@@ -43,3 +50,20 @@ struct Stack<T> {
 }
 
 
+struct Queue<T> {
+    fileprivate var array = [T]()
+    
+    public var isEmpty: Bool {
+        return array.isEmpty
+    }
+    public var count: Int {
+        return array.count
+    }
+    mutating public func pop() {
+        if array.isEmpty {
+            self.array.popLast()
+        }
+    }
+    
+    
+}

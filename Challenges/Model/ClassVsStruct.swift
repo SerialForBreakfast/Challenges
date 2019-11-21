@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Dog {
+public class DogClass {
     var age: Int
     var name: String
     
@@ -18,12 +18,12 @@ class Dog {
     }
 }
 
-//var myDog1 = Dog(age: 2, name: "Lassie")
+//var myDog1 = DogClass(age: 2, name: "Lassie")
 //var myDog2 = myDog1
 //myDog2.name = "Rin Tin Tin"
 //print(myDog1.name)
 
-struct Cat {
+public struct CatStruct {
     var age: Int
     var name: String
     init(age: Int, name: String){
@@ -32,7 +32,7 @@ struct Cat {
     }
 }
 
-//var myCat1 = Cat(age: 3, name: "Garfield")
+//var myCat1 = CatStruct(age: 3, name: "Garfield")
 //var myCat2 = myCat1
 //myCat2.name = "Grumpy"
 //print(myCat1.name)

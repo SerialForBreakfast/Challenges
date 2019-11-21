@@ -19,6 +19,10 @@ struct Search {
         return false
     }
     
+    func LinearSearchMap(searchValue: Int, array: [Int]) -> [Bool] {
+        return array.map({ $0 == searchValue })
+    }
+    
     // Split and Compare....
     func BinarySearch(searchValue: Int, array: [Int]) -> Bool {
         var leftIndex: Int = 0

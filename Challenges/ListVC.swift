@@ -13,18 +13,15 @@ class ListVC: UITableViewController {
     
     let challenges = HWSChallenges()
     let adventOfCode = AdventOfCode2018()
+    var challengeResults: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("HWS Challenges Results")
+        challengeResults.append(String(challenges.challenge1(input: "no Dupes")))
         print(challenges.challenge1(input: "no Dupes"))
-        assert(challenges.challenge1(input: "no Dupes"))
-        
-        
-        print(challenges.challenge2(input: "aabbaa"))
-        assert(challenges.challenge2(input: "aabbaa"))
-        print()
+        challengeResults.append(String(challenges.challenge2(input: "aabbaa")))
         print(challenges.challenge4(string1: "abcdefg", string2: "cde"))
         print(challenges.challenge4(string1: "abcdefg", string2: "rde"))
         
@@ -37,29 +34,41 @@ class ListVC: UITableViewController {
         print(challenges.challenge11(string1: "ABCDEFG", string2: "ABCXXXXG"))
         print(challenges.challenge12(string: "dog don't does dork donut"))
         print(challenges.challenge13(input: "AAABBBBbb"))
+        //print(challenges.challenge14(string: "wombat"))
         
-        
+//        print("The length of the largest common strings is: \(challenges.LCSLength(x: "ABCBDAB", y: "BDCABA", m: 7, n: 6))")
         //print("Advent Of Code Results")
+        
+//        print("The length of the largest common strings is: \(challenges.LCSLength(x: "AAABBBB", y: "ABAABA", m: 7, n: 6))")
         //print(adventOfCode.Day1a())
         //print(adventOfCode.Day1b())
+//        var myDog1 = DogClass(age: 2, name: "Lassie")
+//        var myDog2 = myDog1
+//        myDog2.name = "Rin Tin Tin"
+//        print(myDog1.name)
+//        var myCat1 = CatStruct(age: 3, name: "Garfield")
+//        var myCat2 = myCat1
+//        myCat2.name = "Grumpy"
+//        print(myCat1.name)
+        print(challengeResults)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let row: [Int] = [4, 1]
+        let row: [Int] = [challengeResults.count, 1]
         return row[section]
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let sectionTitles: [String] = ["Hacking With Swift Challenges", "Advent of Code 2018"]
+        let sectionTitles: [String] = ["Hacking With Swift Challenges"]
         return sectionTitles[section]
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let labelArray = ["", "", "", "", ""]
-        cell.textLabel?.text = labelArray[indexPath.row]
+        
+        cell.textLabel?.text = challengeResults[indexPath.row]
         return cell
     }
 }

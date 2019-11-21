@@ -83,7 +83,7 @@ public struct HWSChallenges {
         }
         return condensedWhitespace
     }
-    // String is rotate
+    // String is rotated
     func challenge8(input: String, rotated: String) -> Bool {
         let doubledString = input + input
         return doubledString.contains(rotated)
@@ -171,17 +171,65 @@ public struct HWSChallenges {
         return runLengthEncoding
     }
     
-}
-
-
-// String extension to allow index access via bracket notation to accommodate MultiCharacter Grapheme Clusters in Unicode
-//extension String {
-//    subscript(i: Int) -> String {
-//        return String(self[index(startIndex, offsetBy: i)])
+    //String permutations.  Given a string print all possible permutations
+    func challenge14(string: String) {
+        while string.count > 1 {
+            
+        }
+        
+        print(string)
+        challenge14(string: string)
+    }
+    
+    func challenge14a(string: String, current: String = "") {
+        let length = string.count
+        let strArray = Array(string)
+        if (length == 0) {
+            // there's nothing left to re-arrange; print the result
+            print(current)
+            print("******")
+        } else {
+            print(current)
+            
+            // loop through every character
+            for i in 0 ..< length {
+                // get the letters before me
+                let left = String(strArray[0 ..< i])
+                // get the letters after me
+                let right = String(strArray[i+1 ..< length])
+                // put those two together and carry on
+                challenge14a(string: left + right, current: current +
+                    String(strArray[i]))
+            } }
+    }
+    
+    // Given 2 string x and y where m and n and the counts of x and y respectively
+//    func LCSLength(x: String, y: String, m: Int, n: Int) -> Int {
+//
+//        if m == 0 || n == 0 {
+//            return 0
+//        }
+//        //        print(x.utf8.)
+//        //print("x: \(x[x.startIndex, offsetBy: m - 1]) y: \(y.index(y.startIndex, offsetBy: n - 1))")
+//        print(x[x.startIndex])
+//        //        print(x.index(after: m - 1) )
+//        //        if x[index(x.startIndex, Int32(m - 1) )] == y.index(y.startIndex, offsetBy: n - 1 ) {
+//        //            return (LCSLength(x: x, y: y, m: m - 1, n: n - 1) + 1)
+//        //        }
+//        //            return max(LCSLength(x: x, y: y, m: m, n: n - 1), LCSLength(x: x, y: y, m: m - 1, n: n))
+//        //        }
 //    }
-//}
-
-
-
-
-
+    
+    
+    // String extension to allow index access via bracket notation to accommodate MultiCharacter Grapheme Clusters in Unicode
+    //extension String {
+    //    subscript(i: Int) -> String {
+    //        return String(self[index(startIndex, offsetBy: i)])
+    //    }
+    //}
+    
+    
+    
+    
+    
+}
