@@ -38,6 +38,7 @@ public struct HWSChallenges {
     func challenge4(string1: String, string2: String) -> Bool {
         return string1.lowercased().range(of: string2.lowercased()) != nil
     }
+    
     //  How many times does a Character appear in a String O(n)
     func challenge5(input: String, count: Character) -> Int {
         var letterCount = 0
@@ -83,17 +84,20 @@ public struct HWSChallenges {
         }
         return condensedWhitespace
     }
+    
     // String is rotated
     func challenge8(input: String, rotated: String) -> Bool {
         let doubledString = input + input
         return doubledString.contains(rotated)
     }
+    
     // Is it a pangram.  Does it have all the letters of the alphabet?
     func challenge9 (input: String) -> Bool {
         let set = Set(input.lowercased())
         let letters = set.filter { $0 >= "a" && $0 <= "z" }
         return letters.count == 26
     }
+    
     // Count all Vowels and consonants
     func challenge10(input: String) -> ( Int, Int ) {
         var vowelCount = 0, consonantCount = 0
