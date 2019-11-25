@@ -26,12 +26,21 @@ class ChallengesTests: XCTestCase {
         XCTAssert(challenges.challenge9(input: "The quick brown fox jumps over the lazy dog"))
         XCTAssert(challenges.challenge9(input: "Sympathizing would fix Quaker objectives"))
         
-//        XCTAssertEqual(challenges.challenge10(input: "AaaBbbCcc"), (3,6))  //
+//        XCTAssertEqual(challenges.challenge10(input: "AaaBbbCcc"), (3,6))
+        
+        /*How should you write an XCTAssertEqual test for a function that returns a tuple (Int, Int)?  Tuples aren't concrete types, so they can't conform to equatable right?  I wanted to write XCTAssertEqual(funcThatReturnsATupleWithAOneAndATwo(), (1,2))
+
+         but I had to
+         let tupleResult = funcThatReturnsATupleWithAOneAndATwo()
+         XCTAssert(tupleResult == (1,2))
+         Why is equatable in one instance but not the other? */
+        
         let tupleResult = challenges.challenge10(input: "AaaBbbCcc")
         XCTAssert(tupleResult == (3,6))
-//        XCTAssert(challenges.challenge11(string1: "ABCDEFG", string2: "ABCXXXXG"))
+        XCTAssert(challenges.challenge11(string1: "ABCDEFG", string2: "ABCXXXG"))
         XCTAssert(challenges.challenge12(string: "dog don't does dork donut") == "do")
         XCTAssert(challenges.challenge13(input: "AAABBBBbb") == "A3B4b2")
+        
         let fb = FizzBuzz()
         XCTAssertEqual(fb.isIntAFizzOrBuzz(num: 15), "fizzbuzz")
     }
