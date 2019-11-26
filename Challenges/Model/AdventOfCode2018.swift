@@ -9,7 +9,6 @@
 import UIKit
 
 struct AdventOfCode2018 {
-    
     func Day1a() -> Int {
         var answer: Int = 0
         if let path = Bundle.main.path(forResource: "adventOfCode2018Day1Input", ofType: "txt") {

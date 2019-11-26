@@ -8,20 +8,14 @@
 
 import UIKit
 
-struct DataStructure {
-
-}
-
 
 public class LinkedListNode<T> {
     var value: T
     var next: LinkedListNode?
     
-    
     public init(value: T) {
         self.value = value
     }
-    
 }
 
 struct Stack<T> {
@@ -49,7 +43,6 @@ struct Stack<T> {
     }
 }
 
-
 struct Queue<T> {
     fileprivate var array = [T]()
     
@@ -64,6 +57,4 @@ struct Queue<T> {
             self.array.popLast()
         }
     }
-    
-    
 }

@@ -194,7 +194,6 @@ public struct HWSChallenges {
             print("******")
         } else {
             print(current)
-            
             // loop through every character
             for i in 0 ..< length {
                 // get the letters before me
