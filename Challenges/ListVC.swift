@@ -50,7 +50,11 @@ class ListVC: UITableViewController {
 //        var myCat2 = myCat1
 //        myCat2.name = "Grumpy"
 //        print(myCat1.name)
-        print(challengeResults)
+//        print(challengeResults)
+        let kth = Kth_Largest_Element()
+        print(kth.simpleImplementation([1,3,2,4,5,9,8,7,6], 2))
+        print(kth.quickSelectImplementation([1,3,2,4,5,9,8,7,6], 2))
+
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
