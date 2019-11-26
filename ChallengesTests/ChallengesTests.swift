@@ -69,7 +69,10 @@ class ChallengesTests: XCTestCase {
         
         let kth = Kth_Largest_Element()
         XCTAssertEqual(kth.simpleImplementation([1,3,2,4,5,9,8,7,6], 2), 8)
-//        XCTAssertEqual(kth.quickSelectImplementation([1,3,2,4,5,9,8,7,6], 2), 82)
+        
+        XCTAssertEqual(kth.quickSelectImplementation([12,3,2,43,5,9,8,7,6,10,11,32,4324], 1), 4324)
+        XCTAssertEqual(kth.quickSelectImplementation([12,3,2,43,5,9,8,7,6,10,11,32,4324], 2), 43)
+        XCTAssertEqual(kth.quickSelectImplementation([12,3,2,43,5,9,8,7,6,10,11,32,4324], 3), 32)
         
         
     }

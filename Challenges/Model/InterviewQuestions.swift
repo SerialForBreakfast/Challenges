@@ -39,24 +39,35 @@ struct Kth_Largest_Element {
     }
     public func quickSelectImplementation(_ a:[Int], _ k:Int) -> Int? {
         let length = a.count
+        if k == length {
+            return a[0]
+        } else if k <= 0 || k > length {
+            print("length \(length) k \(k)")
+            return nil
+        }
+        
         let r = Int(arc4random_uniform(UInt32(length)))
         let pivot = a[r]
         var smaller:[Int] = []
         var larger:[Int] = []
         for i in 0...(length - 1) {
-            print(i)
+            print("pivot is \(pivot) k: \(k) at index: \(i) current: \(a[i]) smaller: \(smaller) larger: \(larger)" )
             if a[i] < pivot {
                 smaller.append(a[i])
             } else if a[i] > pivot {
                 larger.append(a[i])
             }
         }
-        if k <= smaller.count {
-            return quickSelectImplementation(smaller, k)
-        } else if k <= larger.count {
-            return quickSelectImplementation(larger, k)
-        } else {
+        if k == (larger.count + 1) {
             return pivot
         }
+        if k < larger.count {
+            return quickSelectImplementation(larger, k)
+        } else if k > larger.count {
+            return quickSelectImplementation(smaller, k - (length - larger.count))
+        } //else if k == (larger.count + 1) {
+        return pivot
+        
     }
 }
+
