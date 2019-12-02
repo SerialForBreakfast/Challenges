@@ -27,6 +27,17 @@ struct FizzBuzz {
     }
 }
 
+//struct TwoSum( _ a:[Int], _ res:Int) -> [Int] {
+//    var results: [Int] = []
+//    for i in a {
+//        let j = a[(1 + i)]
+//        if a[i] + a[j] == res {
+//            return [a[i],a[j]]
+//        }
+//    }
+//    return [1,2]
+//}
+
 struct Kth_Largest_Element {
     public func simpleImplementation(_ a:[Int], _ k:Int) -> Int? {
         let length = a.count
@@ -38,6 +49,15 @@ struct Kth_Largest_Element {
         }
     }
     public func quickSelectImplementation(_ a:[Int], _ k:Int) -> Int? {
+        func pivot() {
+            
+        }
+        func partition() {
+            
+        }
+        func select() {
+            
+        }
         let length = a.count
         if k == length {
             return a[0]
@@ -67,6 +87,22 @@ struct Kth_Largest_Element {
             return quickSelectImplementation(smaller, k - (length - larger.count))
         } //else if k == (larger.count + 1) {
         return pivot
+        
+    }
+    public func TwoSum(nums: [Int], target: Int) -> [Int]? {
+        var dict = [Int: Int]()
+        var index = 0
+        var complimentIndex: Int?
+        for num in nums {
+            dict[index] = num
+            let compliment = target - num
+            if let complimentIndex = dict[compliment] {
+                return [index, complimentIndex]
+            }
+            index += 1
+            
+        }
+        return nil
         
     }
 }
