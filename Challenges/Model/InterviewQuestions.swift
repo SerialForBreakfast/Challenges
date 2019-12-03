@@ -89,7 +89,9 @@ struct Kth_Largest_Element {
         return pivot
         
     }
-    public func TwoSum(nums: [Int], target: Int) -> [Int]? {
+    
+    //Given an array of size n use Dictionary to look up compliment n log n?
+    public func TwoSumDictionary(nums: [Int], target: Int) -> [Int]? {
         var dict = [Int: Int]()
         var index = 0
         var complimentIndex: Int?
@@ -100,26 +102,53 @@ struct Kth_Largest_Element {
                 return [index, complimentIndex]
             }
             index += 1
-            
         }
         return nil
-        
+    }
+    //  Search of a array using contains  n log n
+    public func TwoSum(nums: [Int], sum: Int) -> Bool {
+        for i in 0..<nums.count {
+            let compliment = sum - nums[i]
+            var tempArray = nums
+            tempArray.remove(at: i)
+            let hasCompliement = tempArray.contains(compliment)
+            if hasCompliement {
+                return true
+            }
+        }
+        return false
     }
     
+    //Pointer solution works on sorted arrays 0(n)
+    public func TwoSumPointerSolution(nums: [Int], sum: Int) -> Bool {
+        var lowIndex = 0
+        var highIndex = nums.count - 1
+        while lowIndex < highIndex {
+            var sumOfLowAndHigh = nums[lowIndex] + nums[highIndex]
+            if sum == sumOfLowAndHigh {
+                return true
+            } else if sumOfLowAndHigh < sum {
+                lowIndex += 1
+            } else if sumOfLowAndHigh > sum {
+                highIndex -= 1
+            }
+        }
+        return false
+    }
     //Given 2 strings return the least possible operations to transmute using insert, remove, replace.  Is the minimum edit distance problem
-//    public func recursiveOperationCount(s1: inout String, s2: inout String, operations: inout Int?) -> Int {
-//        if operations == nil {
-//            operations = 0
-//        }
-//        if s1 == s2 {
-//            return operations!
-//        }
-//        if s1.last == s2.last {
-//            print(s1.popLast())
-//            print(s2.popLast())
-//            recursiveOperationCount(s1: &s1, s2: &s2, operations: &operations)
-//        }
-//        return operations!
-//    }
+    //    public func recursiveOperationCount(s1: inout String, s2: inout String, operations: inout Int?) -> Int {
+    //        if operations == nil {
+    //            operations = 0
+    //        }
+    //        if s1 == s2 {
+    //            return operations!
+    //        }
+    //        if s1.last == s2.last {
+    //            print(s1.popLast())
+    //            print(s2.popLast())
+    //            recursiveOperationCount(s1: &s1, s2: &s2, operations: &operations)
+    //        }
+    //        return operations!
+    //    }
 }
 

@@ -9,14 +9,14 @@
 import UIKit
 
 
-public class LinkedListNode<T> {
-    var value: T
-    var next: LinkedListNode?
-    
-    public init(value: T) {
-        self.value = value
-    }
-}
+//public class LinkedListNode<T> {
+//    var value: T
+//    var next: LinkedListNode?
+//    
+//    public init(value: T) {
+//        self.value = value
+//    }
+//}
 
 // A stack contains elements of any type in an array with the following features:  LIFO Last In First Out.  This limited array has the following properties: isEmpty, count, peek, and the methods push and pop.
 
