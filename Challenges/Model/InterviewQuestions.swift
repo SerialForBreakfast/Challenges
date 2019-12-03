@@ -105,5 +105,21 @@ struct Kth_Largest_Element {
         return nil
         
     }
+    
+    //Given 2 strings return the least possible operations to transmute using insert, remove, replace.  Is the minimum edit distance problem
+//    public func recursiveOperationCount(s1: inout String, s2: inout String, operations: inout Int?) -> Int {
+//        if operations == nil {
+//            operations = 0
+//        }
+//        if s1 == s2 {
+//            return operations!
+//        }
+//        if s1.last == s2.last {
+//            print(s1.popLast())
+//            print(s2.popLast())
+//            recursiveOperationCount(s1: &s1, s2: &s2, operations: &operations)
+//        }
+//        return operations!
+//    }
 }
 

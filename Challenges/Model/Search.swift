@@ -10,6 +10,7 @@ import UIKit
 
 struct Search {
     // 0(n)
+    // Linear search returns a bool
     func LinearSearch(searchValue: Int, array: [Int]) -> Bool {
         for num in array {
             if num == searchValue {
@@ -42,4 +43,14 @@ struct Search {
         }
         return false
     }
+    
+    //linear search for any equatable type using enumerated.
+    
+    func linearSearchEquatable<T: Equatable>(_ array:[T], _ obj:T) -> Int? {
+        for (index, item) in array.enumerated() where item == obj {
+            return index
+        }
+        return nil
+    }
+    
 }

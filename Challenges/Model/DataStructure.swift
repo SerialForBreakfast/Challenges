@@ -18,30 +18,60 @@ public class LinkedListNode<T> {
     }
 }
 
-struct Stack<T> {
-    fileprivate var array = [T]()
+// A stack contains elements of any type in an array with the following features:  LIFO Last In First Out.  This limited array has the following properties: isEmpty, count, peek, and the methods push and pop.
+
+struct Stack2<T> {
+    public var array = [T]() //We initialize an array of the specified type T
     
     public var isEmpty: Bool {
         return array.isEmpty
     }
-    
     public var count: Int {
         return array.count
     }
-    
-    public var top: T? {
+    public var peek: T? {
         return array.last
     }
-    
     public mutating func push(_ element: T) {
-        array.append(element)
+        return array.append(element)
     }
     public mutating func pop(_ element: T) {
-        if !array.isEmpty {
+        if array.isEmpty  == false {
             array.popLast()
         }
     }
 }
+
+
+
+//
+//
+//
+//struct Stack<T> {
+//    fileprivate var array = [T]()
+//
+//    public var isEmpty: Bool {
+//        return array.isEmpty
+//    }
+//
+//    public var count: Int {
+//        return array.count
+//    }
+//
+//    public var top: T? {
+//
+//        return array.last
+//    }
+//
+//    public mutating func push(_ element: T) {
+//        array.append(element)
+//    }
+//    public mutating func pop(_ element: T) {
+//        if !array.isEmpty {
+//            array.popLast()
+//        }
+//    }
+//}
 
 struct Queue<T> {
     fileprivate var array = [T]()
@@ -52,9 +82,21 @@ struct Queue<T> {
     public var count: Int {
         return array.count
     }
-    mutating public func pop() {
+    public var front: T? {
         if array.isEmpty {
-            self.array.popLast()
+            return nil
+            } else {
+            return array.first
+        }
+    }
+    mutating public func enqueue(_ element: T) {
+        return array.append(element)
+    }
+    mutating public func dequeue() -> T? {
+        if array.isEmpty {
+            return array.removeFirst()
+        } else {
+            return nil
         }
     }
 }

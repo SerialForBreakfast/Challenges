@@ -89,6 +89,6 @@ class ChallengesTests: XCTestCase {
         let search = Search()
         XCTAssertEqual(search.LinearSearch(searchValue: 1, array: [1,2,3,4]), true)
         XCTAssertEqual(search.LinearSearch(searchValue: 2, array: [1,2,3,4]), true)
-        XCTAssertEqual(search.LinearSearch(searchValue: 8, array: [1,2,3,4]), false)
+        XCTAssertEqual(search.linearSearchEquatable([1,2,3,4], 2), 1)
     }
 }
