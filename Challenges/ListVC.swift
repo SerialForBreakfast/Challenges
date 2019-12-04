@@ -54,7 +54,10 @@ class ListVC: UITableViewController {
         let kth = Kth_Largest_Element()
         print(kth.simpleImplementation([1,3,2,4,5,9,8,7,6], 2))
         print(kth.quickSelectImplementation([1,3,2,4,5,9,8,7,6], 2))
-
+        
+        
+        let adventOfCode = AdventOfCode2019()
+        print("AoC2019_Day_01_Input \(adventOfCode.Day1())")
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

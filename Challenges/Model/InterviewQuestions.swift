@@ -124,7 +124,7 @@ struct Kth_Largest_Element {
         var lowIndex = 0
         var highIndex = nums.count - 1
         while lowIndex < highIndex {
-            var sumOfLowAndHigh = nums[lowIndex] + nums[highIndex]
+            let sumOfLowAndHigh = nums[lowIndex] + nums[highIndex]
             if sum == sumOfLowAndHigh {
                 return true
             } else if sumOfLowAndHigh < sum {
