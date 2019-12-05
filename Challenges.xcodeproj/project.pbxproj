@@ -10,6 +10,8 @@
 		440A67FA2295F531006353EF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A67F92295F531006353EF /* Search.swift */; };
 		4459420A23985A9900AC8B55 /* AdventOfCode2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459420923985A9900AC8B55 /* AdventOfCode2019.swift */; };
 		4459420C23985B0100AC8B55 /* AoC2019_Day_01_Input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4459420B23985B0100AC8B55 /* AoC2019_Day_01_Input.txt */; };
+		4459420E23987AC700AC8B55 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459420D23987AC700AC8B55 /* Extensions.swift */; };
+		44594210239880E400AC8B55 /* AoC2019_day2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4459420F239880E400AC8B55 /* AoC2019_day2.txt */; };
 		4490B79F238728D500972F4A /* ClassVsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */; };
 		4490B7A0238729E400972F4A /* InterviewQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA692295CBAD0084F8B9 /* InterviewQuestions.swift */; };
 		449E625C2291F4AE00D29FE4 /* AdventOfCode2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */; };
@@ -58,6 +60,8 @@
 		440A67F92295F531006353EF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		4459420923985A9900AC8B55 /* AdventOfCode2019.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2019.swift; sourceTree = "<group>"; };
 		4459420B23985B0100AC8B55 /* AoC2019_Day_01_Input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoC2019_Day_01_Input.txt; sourceTree = "<group>"; };
+		4459420D23987AC700AC8B55 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4459420F239880E400AC8B55 /* AoC2019_day2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoC2019_day2.txt; sourceTree = "<group>"; };
 		44C15FCE2296043B000DC026 /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		44C15FD222963C2F000DC026 /* ChallengeLearning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChallengeLearning.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		44E1721722913A8000FF3EAF /* Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +152,7 @@
 				44E1722122913A8300FF3EAF /* Assets.xcassets */,
 				44E1722322913A8300FF3EAF /* LaunchScreen.storyboard */,
 				44E1722622913A8300FF3EAF /* Info.plist */,
+				4459420D23987AC700AC8B55 /* Extensions.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				4459420B23985B0100AC8B55 /* AoC2019_Day_01_Input.txt */,
+				4459420F239880E400AC8B55 /* AoC2019_day2.txt */,
 				44E1724C2291E09800FF3EAF /* adventOfCode2018Day1Input.txt */,
 			);
 			path = Data;
@@ -304,6 +310,7 @@
 				44E1722222913A8300FF3EAF /* Assets.xcassets in Resources */,
 				44E1722022913A8000FF3EAF /* Main.storyboard in Resources */,
 				44E1724D2291E09800FF3EAF /* adventOfCode2018Day1Input.txt in Resources */,
+				44594210239880E400AC8B55 /* AoC2019_day2.txt in Resources */,
 				4459420C23985B0100AC8B55 /* AoC2019_Day_01_Input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +345,7 @@
 				44E9BA6C2295CF330084F8B9 /* Sorters.swift in Sources */,
 				44E9BA6A2295CBAD0084F8B9 /* InterviewQuestions.swift in Sources */,
 				4459420A23985A9900AC8B55 /* AdventOfCode2019.swift in Sources */,
+				4459420E23987AC700AC8B55 /* Extensions.swift in Sources */,
 				44E9BA662295BA040084F8B9 /* ClassVsStruct.swift in Sources */,
 				44E172502291E13100FF3EAF /* AdventOfCode2018.swift in Sources */,
 				44E9BA682295C4730084F8B9 /* FilterMapReduce.swift in Sources */,
