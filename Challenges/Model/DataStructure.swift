@@ -85,7 +85,7 @@ struct Queue<T> {
     public var front: T? {
         if array.isEmpty {
             return nil
-            } else {
+        } else {
             return array.first
         }
     }
@@ -100,3 +100,4 @@ struct Queue<T> {
         }
     }
 }
+

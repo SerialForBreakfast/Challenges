@@ -17,7 +17,7 @@ class ListVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         print("HWS Challenges Results")
         challengeResults.append(String(challenges.challenge1(input: "no Dupes")))
         print(challenges.challenge1(input: "no Dupes"))
@@ -36,21 +36,21 @@ class ListVC: UITableViewController {
         print(challenges.challenge13(input: "AAABBBBbb"))
         //print(challenges.challenge14(string: "wombat"))
         
-//        print("The length of the largest common strings is: \(challenges.LCSLength(x: "ABCBDAB", y: "BDCABA", m: 7, n: 6))")
+        //        print("The length of the largest common strings is: \(challenges.LCSLength(x: "ABCBDAB", y: "BDCABA", m: 7, n: 6))")
         //print("Advent Of Code Results")
         
-//        print("The length of the largest common strings is: \(challenges.LCSLength(x: "AAABBBB", y: "ABAABA", m: 7, n: 6))")
+        //        print("The length of the largest common strings is: \(challenges.LCSLength(x: "AAABBBB", y: "ABAABA", m: 7, n: 6))")
         //print(adventOfCode.Day1a())
         //print(adventOfCode.Day1b())
-//        var myDog1 = DogClass(age: 2, name: "Lassie")
-//        var myDog2 = myDog1
-//        myDog2.name = "Rin Tin Tin"
-//        print(myDog1.name)
-//        var myCat1 = CatStruct(age: 3, name: "Garfield")
-//        var myCat2 = myCat1
-//        myCat2.name = "Grumpy"
-//        print(myCat1.name)
-//        print(challengeResults)
+        //        var myDog1 = DogClass(age: 2, name: "Lassie")
+        //        var myDog2 = myDog1
+        //        myDog2.name = "Rin Tin Tin"
+        //        print(myDog1.name)
+        //        var myCat1 = CatStruct(age: 3, name: "Garfield")
+        //        var myCat2 = myCat1
+        //        myCat2.name = "Grumpy"
+        //        print(myCat1.name)
+        //        print(challengeResults)
         let kth = Kth_Largest_Element()
         print(kth.simpleImplementation([1,3,2,4,5,9,8,7,6], 2))
         print(kth.quickSelectImplementation([1,3,2,4,5,9,8,7,6], 2))
@@ -58,7 +58,17 @@ class ListVC: UITableViewController {
         
         let adventOfCode = AdventOfCode2019()
         print("AoC2019_Day_01_Input \(adventOfCode.Day1())")
-
+        
+        var hashTable = HashTable<String, String>(capacity: 5)
+        hashTable["Joe"] = "McCraw"
+        let x = hashTable["Joe"]
+        print("Hashtable lookup \(x)")
+        hashTable["Joe"] = "Blow"
+        print("Hashtable lookup \(x)")
+        print(hashTable)
+        hashTable["Joe"] = nil
+        print(hashTable)
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -72,7 +82,7 @@ class ListVC: UITableViewController {
         let sectionTitles: [String] = ["Hacking With Swift Challenges"]
         return sectionTitles[section]
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
