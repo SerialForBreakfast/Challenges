@@ -13,6 +13,10 @@
 		4459420E23987AC700AC8B55 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459420D23987AC700AC8B55 /* Extensions.swift */; };
 		44594210239880E400AC8B55 /* AoC2019_day2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4459420F239880E400AC8B55 /* AoC2019_day2.txt */; };
 		447C8CAE239AD3D500887015 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447C8CAD239AD3D500887015 /* HashTable.swift */; };
+		447C8CB0239AF1D800887015 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447C8CAF239AF1D800887015 /* Vertex.swift */; };
+		447C8CB3239AF89500887015 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447C8CB2239AF89500887015 /* Edge.swift */; };
+		447C8CB5239AF9FC00887015 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447C8CB4239AF9FC00887015 /* Graphable.swift */; };
+		447C8CB7239AFB1F00887015 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447C8CB6239AFB1F00887015 /* AdjacencyList.swift */; };
 		4490B79F238728D500972F4A /* ClassVsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA652295BA040084F8B9 /* ClassVsStruct.swift */; };
 		4490B7A0238729E400972F4A /* InterviewQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9BA692295CBAD0084F8B9 /* InterviewQuestions.swift */; };
 		449E625C2291F4AE00D29FE4 /* AdventOfCode2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1724F2291E13100FF3EAF /* AdventOfCode2018.swift */; };
@@ -64,6 +68,10 @@
 		4459420D23987AC700AC8B55 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4459420F239880E400AC8B55 /* AoC2019_day2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoC2019_day2.txt; sourceTree = "<group>"; };
 		447C8CAD239AD3D500887015 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		447C8CAF239AF1D800887015 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		447C8CB2239AF89500887015 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		447C8CB4239AF9FC00887015 /* Graphable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
+		447C8CB6239AFB1F00887015 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
 		44C15FCE2296043B000DC026 /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		44C15FD222963C2F000DC026 /* ChallengeLearning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChallengeLearning.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		44E1721722913A8000FF3EAF /* Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +122,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		447C8CB1239AF87F00887015 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				447C8CAF239AF1D800887015 /* Vertex.swift */,
+				447C8CB2239AF89500887015 /* Edge.swift */,
+				447C8CB4239AF9FC00887015 /* Graphable.swift */,
+				447C8CB6239AFB1F00887015 /* AdjacencyList.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		44ABF5EA2291F04600C6CCEB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +199,7 @@
 		44E1724A2291D2E600FF3EAF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				447C8CB1239AF87F00887015 /* Graph */,
 				44E9BA6B2295CF330084F8B9 /* Sorters.swift */,
 				440A67F92295F531006353EF /* Search.swift */,
 				44E9BA6F2295E3610084F8B9 /* DataStructure.swift */,
@@ -348,7 +368,11 @@
 				44E9BA702295E3610084F8B9 /* DataStructure.swift in Sources */,
 				44E9BA6C2295CF330084F8B9 /* Sorters.swift in Sources */,
 				44E9BA6A2295CBAD0084F8B9 /* InterviewQuestions.swift in Sources */,
+				447C8CB0239AF1D800887015 /* Vertex.swift in Sources */,
+				447C8CB5239AF9FC00887015 /* Graphable.swift in Sources */,
 				4459420A23985A9900AC8B55 /* AdventOfCode2019.swift in Sources */,
+				447C8CB3239AF89500887015 /* Edge.swift in Sources */,
+				447C8CB7239AFB1F00887015 /* AdjacencyList.swift in Sources */,
 				4459420E23987AC700AC8B55 /* Extensions.swift in Sources */,
 				44E9BA662295BA040084F8B9 /* ClassVsStruct.swift in Sources */,
 				44E172502291E13100FF3EAF /* AdventOfCode2018.swift in Sources */,
