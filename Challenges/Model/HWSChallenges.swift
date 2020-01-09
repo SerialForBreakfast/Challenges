@@ -7,7 +7,9 @@
 //  Challenges from the HWS Coding Challenges udemy class
 
 import Foundation
-
+/**
+ ##test
+*/
 public struct HWSChallenges {
     //  Are the Letters unique? O(1)
     public func challenge1(input: String) -> Bool {

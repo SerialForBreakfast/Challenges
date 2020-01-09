@@ -81,7 +81,7 @@
 		44C15FCE2296043B000DC026 /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		44C15FD222963C2F000DC026 /* ChallengeLearning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ChallengeLearning.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		44D9199323C6BD1B00ED066B /* WeirdSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeirdSwift.swift; sourceTree = "<group>"; };
-		44D9199523C6C09700ED066B /* ProSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProSwift.playground; sourceTree = "<group>"; };
+		44D9199523C6C09700ED066B /* ProSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		44E1721722913A8000FF3EAF /* Challenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E1721A22913A8000FF3EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44E1721C22913A8000FF3EAF /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };

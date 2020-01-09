@@ -17,7 +17,8 @@ class ListVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        let none: Int? = nil
+//        print(none!)
         print("HWS Challenges Results")
         challengeResults.append(String(challenges.challenge1(input: "no Dupes")))
         print(challenges.challenge1(input: "no Dupes"))
