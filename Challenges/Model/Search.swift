@@ -20,8 +20,8 @@ struct Search {
         return false
     }
     
-    func LinearSearchMap(searchValue: Int, array: [Int]) -> [Bool] {
-        return array.map({ $0 == searchValue })
+    func LinearSearchContains(searchValue: Int, array: [Int]) -> Bool {
+        return array.contains(searchValue)
     }
     
     // Split and Compare....
@@ -44,6 +44,26 @@ struct Search {
         return false
     }
     
+    //O(log n)
+    public func BinarySearch<T: Comparable>(array: [T], obj: T) -> Bool {
+        var lowerBound = 0
+        var upperBound = array.count
+        while lowerBound < upperBound {
+            let midIndex = lowerBound + (upperBound - lowerBound) / 2
+            let current = array[midIndex]
+            if current < obj {
+                upperBound = midIndex
+            } else if current > obj {
+                lowerBound = midIndex + 1
+            } else {
+                return true
+            }
+        }
+        
+        return false
+        
+    }
+    
     //linear search for any equatable type using enumerated.
     
     func linearSearchEquatable<T: Equatable>(_ array:[T], _ obj:T) -> Int? {
@@ -53,4 +73,16 @@ struct Search {
         return nil
     }
     
+}
+
+
+
+public func linearSearchRecursive<T: Equatable>(array: inout [T], obj: T) -> Bool {
+    if array.count == 0 { return false }
+    if array.popLast() == obj {
+        return true
+    } else {
+        linearSearchRecursive(array: &array, obj: obj)
+    }
+    return false
 }

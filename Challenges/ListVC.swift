@@ -116,6 +116,9 @@ class ListVC: UITableViewController {
         // root node
         let tree = BinaryTree.node(timesLeft, "+", timesRight)
         print(tree)
+        
+        
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

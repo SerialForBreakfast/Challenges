@@ -90,5 +90,6 @@ class ChallengesTests: XCTestCase {
         XCTAssertEqual(search.LinearSearch(searchValue: 1, array: [1,2,3,4]), true)
         XCTAssertEqual(search.LinearSearch(searchValue: 2, array: [1,2,3,4]), true)
         XCTAssertEqual(search.linearSearchEquatable([1,2,3,4], 2), 1)
+        XCTAssertEqual(search.BinarySearch(array: [1,2,3,4], obj: 2), true)
     }
 }
