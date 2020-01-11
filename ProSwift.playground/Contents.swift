@@ -353,7 +353,8 @@ let result1 = names.filter({ (name: String) -> Bool in
    } else {
       return false
    }
-}) print(result1.count)
+})
+print(result1.count)
 
 let result2 = names.filter({ name in
     if name.hasPrefix("Michael") {
@@ -379,5 +380,11 @@ let result7 = names.filter { $0.hasPrefix("Michael") }
 //Functions as Closures
 import Foundation
 let words = ["1989", "Fearless", "Red"]
-let input = "My favorite album is Fearless" words.contains(where: input.contains)
+let input = "My favorite album is Fearless"
+words.contains(where: input.contains)
 
+//~= is the pattern match operator, and it lets you write code like this:
+let range = 1...100
+let i = 42
+if range ~= i { print("Match!")
+}
