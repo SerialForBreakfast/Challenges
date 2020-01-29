@@ -117,7 +117,7 @@ class ListVC: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return ((completedItems.last!.categoryID)) + 1
+        return sectionTitles.count
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let row: [Int] = [challengeResults.count, 2]
@@ -132,7 +132,8 @@ class ListVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         print("Section: \(indexPath.section) Row: \(indexPath.row) " + challengeResults[indexPath.row])
-        cell.textLabel?.text = completedItems.last.categoryID
+        let finalIndex = completedItems.count - 1
+        cell.textLabel?.text = completedItems[indexPath.row].prompt
 
         return cell
     }
